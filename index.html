@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+  <div class="images">
+  <img id="inn" alt="alt of inn img" src="" onclick="rest(hero)"></img>
+  <img id="bag" alt="alt of bag" src="" onclick="equipWeapon(hero)"></img>
+  <img id="dagger" alt="alt of dagger" src="" onclick="pickUpItem(hero, {type: 'dagger', damage: 2})"></img>
+  </div>
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
